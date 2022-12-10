@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Code Web Practice</title>
+        <style>
+        .textarea1{
+            background-color: #dddddd;
+            color: #3c3955;
+            padding: 1em;
+            border-radius: 10px;
+            border: 2px solid #333333;
+            outline: 2px;
+            height: 410px; 
+            width: 390px;
+            font-family: 'Times New Roman';
+            font-weight: 400;
+            font-size:20px;
+            transition: all 0.4s;
+            position: relative;
+            line-height: 1.4;
+        }
+        .textarea1:hover{
+            cursor:pointer;
+            background-color: #eeee;
+        }
+        .textarea1:focus{
+            cursor:text;
+            color: #333333;
+            border-color: #333333;
+        }
+        .ps_right{
+            position: relative;
+            right: auto;
+            top : 40px;
+        }
+        .ps_left_code{
+            position: relative;
+            left: 680px;
+            top: -500px;
+        }
+        .CODE_TEXT{
+            position: relative;
+            left: 190px;
+            font-weight: bold;
+            color: #0c0c0c;
+            font-size: 20px;
+            top : 20px;
+        }
+        .INPUT_TEXT{
+            position: relative;
+            left: 190px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #0c0c0c;
+            top : 10px; 
+        }
+        .textarea2{
+            background-color: #dddddd;
+            color: #666666;
+            padding: 1em;
+            border-radius: 10px;
+            border: 2px solid #333333;
+            outline: 2px;
+            height: 230px; 
+            width: 390px;
+            font-family: 'Times New Roman';
+            font-weight: 400;
+            font-size:20px;
+            transition: all 0.4s;
+            position: relative;
+        }
+        .textarea2:hover{
+            cursor:pointer;
+            background-color: #eeee;
+        }
+        .textarea2:focus{
+            cursor:text;
+            color: #333333;
+            border-color: #333333;
+        }.input{
+            position: relative;
+            left: 680px;
+            top: -540px;
+            font-size: 8px;
+        }
+        .textarea3{
+            background-color: #dddddd;
+            color: #666666;
+            padding: 1em;
+            border-radius: 10px;
+            border: 2px solid #333333;
+            outline: 2px;
+            height: 50px; 
+            width: 390px;
+            font-family: 'Times New Roman';
+            font-weight: 400;
+            font-size:20px;
+            transition: all 0.4s;
+            position: relative;
+        }
+        .textarea3:hover{
+            cursor:pointer;
+            background-color: #eeee;
+        }
+        .textarea3:focus{
+            cursor:text;
+            color: #333333;
+            border-color: #333333;
+        }
+        .options_choose{
+            position: relative;
+            left: 700px;
+            top: -530px;
+        }
+        .WORK{
+            position: relative;
+            top: 20px;
+            left : 153px;
+            color: #0c0c0c;
+            font-size: 20px;
+            font-weight:bold;
+        }
+        .button-submit {
+            left: 150px;
+            top: 5px;
+            width: 75px;
+            height: 30px;
+            font-size: 16px;
+            background: transparent;
+            border: none;
+            position: relative;
+            color: #f0f0f0;
+            cursor: pointer;
+            z-index: 1;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-submit::after,
+        .button-submit::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -99999;
+            transition: all .4s;
+            }
+
+        .button-submit::before {
+            transform: translate(0%, 0%);
+            width: 100%;
+            height: 100%;
+            background: #28282d;
+            border-radius: 10px;
+        }
+
+        .button-submit::after {
+            transform: translate(10px, 10px);
+            width: 35px;
+            height: 35px;
+            background: #ffffff15;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 50px;
+        }
+
+        .button-submit:hover::before {
+            transform: translate(5%, 20%);
+            width: 110%;
+            height: 110%;
+        }
+
+        .button-submit:hover::after {
+            border-radius: 10px;
+            transform: translate(0, 0);
+            width: 100%;
+            height: 100%;
+        }
+
+        .button-submit:active::after {
+            transition: 0s;
+            transform: translate(0, 5%);
+        }
+        body  
+        {  
+        background-image:url("https://media-exp1.licdn.com/dms/image/C5616AQGpo3XwHVVBTg/profile-displaybackgroundimage-shrink_200_800/0/1520966326523?e=2147483647&v=beta&t=BLl58-swLWwIFwzAXjTDPDjULPNRs0ff1UDUFmUE-50");  
+        }  
+        .text {
+            position: absolute;
+            top: -12px; 
+            right: 50%;
+            transform: translate(50%,-50%);
+            text-transform: uppercase;
+            font-family: verdana;
+            font-size: 50px;
+            color: #f5f5f5;
+            text-shadow: 1px 1px 1px #919191,
+                1px 2px 1px #919191,
+                1px 3px 1px #919191,
+                1px 4px 1px #919191,
+                1px 5px 1px #919191,
+                1px 6px 1px #919191,
+                1px 7px 1px #919191,
+                1px 8px 1px #919191,
+                1px 9px 1px #919191,
+                1px 10px 1px #919191,
+            1px 18px 6px rgba(16,16,16,0.4),
+            1px 22px 10px rgba(16,16,16,0.2),
+            1px 25px 35px rgba(16,16,16,0.2),
+            1px 30px 60px rgba(16,16,16,0.4);
+        }
+        </style>
+    </head>
+    <body>
+            <h1 class = "text">IDE Online</h1>
+            <form id="myform" name="myform" method="post" action="compilecode">
+                <div class = "ps_right">
+                    <h3 class = "WORK" >BÀI TẬP</h3>
+                    <textarea class = "textarea1" >Cho một mảng các số nguyên A, in ra số lượng dãy con có tính chất X trong mảng a.Dãy con có tính chất X là dãy gồm 2 hoặc nhiều phần tử liên tiếp có giá trị bằng nhau dữ liệu vào : gồm 2 dòng, dòng 1 là số phần tử của mảng, dòng 2 là các giá trị của mảng cách nhau bởi một khoảng trắng.Dữ liệu ra : số lượng dãy con có tính chất X trong mảng a.Ví dụ :Dữ liệu vào 8 13324445 Dữ liệu ra 2 Giải thích ví dụ : Mảng có 2 dãy con có tính chất X là {3, 3} và {4, 4, 4}</textarea>
+                </div>
+                <br/>
+                <div class = "ps_left_code">
+                    <h3 class = "CODE_TEXT">CODE</h3>
+                    <textarea id="code" name="code" class = "textarea2"></textarea>
+                </div>
+                <br/>
+                <div class = "input">
+                    <h1 class = "INPUT_TEXT">INPUT</h1>
+                    <textarea id="input" name="input" class = "textarea3"></textarea>
+                </div>
+                <div class = "options_choose">
+                    Language : <select name="lang">
+                        <option value="C">C</option>
+                        <option value="Java">Java</option>
+                        <option value="Python">Python</option>
+                    </select>
+                    Compile with Input :
+                    <input type="radio" name="inputRadio" id="inputRadio" value="true" />Yes
+                    <input type="radio" name="inputRadio" id="inputRadio" value="false" />No
+                    <br/>
+                    <button type = "submit" value="submit" name = "submit" class = "button-submit">
+                        SUBMIT
+                    </button>
+                </div>
+                
+            </form>
+    </body>
+</html>
