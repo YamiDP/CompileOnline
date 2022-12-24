@@ -14,8 +14,8 @@ Chọn Amazon Linux 2 AMI (HVM) - Kernel 5.10, SSD Volume Type
 3. Instance type
 Chọn t2.micro
 ![My Image](https://raw.githubusercontent.com/YamiDP/CompileOnline/main/image/image_2022-12-24_21-35-15.png)
-Key pair (login)
-Chọn Create key pair. Sau đó nhập tên key pair và create key pair
+  - Key pair (login)
+  - Chọn Create key pair. Sau đó nhập tên key pair và create key pair
 ![My Image](https://raw.githubusercontent.com/YamiDP/CompileOnline/main/image/image_2022-12-24_21-35-20.png)
 3. Network settings 
 Chọn nút edit
