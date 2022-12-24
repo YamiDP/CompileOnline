@@ -37,8 +37,8 @@ Chọn phần Inbound rules và chọn Edit inbound rules <br />
 Thiết SSH để client kết nối với intance và HTTP để triển khai dịch vụ web. Cả 2 đều chọn Anywhere-IPv4. Sau đó chọn Save rules <br />
 ![My Image](https://raw.githubusercontent.com/YamiDP/CompileOnline/main/image/image_2022-12-24_21-35-46.png) <br />
 Quay trở lại phần Intances và chọn intance được tạo bên trên. Sau đó chọn Connect <br />
-![My Image](https://raw.githubusercontent.com/YamiDP/CompileOnline/main/image_2022-12-24_21-35-50.png) <br />
-![My Image](./image/image_2022-12-24_21-35-53.png) <br />
+![My Image](https://raw.githubusercontent.com/YamiDP/CompileOnline/main/image/image_2022-12-24_21-35-50.png) <br />
+![My Image]([.](https://raw.githubusercontent.com/YamiDP/CompileOnline/main/image/image_2022-12-24_21-35-53.png) <br />
 Sau đó mở terminal ở vị trí chưa phần key pair được tạo và tải về bên trên <br />
 ![My Image](https://raw.githubusercontent.com/YamiDP/CompileOnline/main/image/image_2022-12-24_21-35-57.png) <br />
 Thực hiện 2 câu lệnh để kết nối với intance từ máy local: <br />
