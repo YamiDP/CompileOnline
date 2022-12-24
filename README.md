@@ -6,7 +6,7 @@
 ## Tên đề tài: Xây dựng trang web viết code online cho Java, C#, Python, C++
 ## Hướng dẫn sử dụng
 - Chọn dịch vụ EC2 của AWS.
-Nhập Name and tags muốn đặt cho intance:
+    - Nhập Name and tags muốn đặt cho intance:
 ![My Image](D:\Desktop\image\image_2022-12-24_21-34-35.png)
 2. Name and tags Application and OS Images (Amazon Machine Image)
 Chọn Amazon Linux 2 AMI (HVM) - Kernel 5.10, SSD Volume Type
